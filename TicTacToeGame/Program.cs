@@ -26,6 +26,13 @@ namespace TicTacToeGame
         public void MakeMove(int index)
         {
             board[index - 1] = MovesCounter % 2 == 0 ? State.Cross : State.Zero;
+
+            MovesCounter++;
+        }
+
+        public State GetState(int index)
+        {
+            return board[index - 1];
         }
     }
 }
