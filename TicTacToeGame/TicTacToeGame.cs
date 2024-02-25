@@ -4,19 +4,6 @@ using System.Text;
 
 namespace TicTacToeGame
 {
-    public enum Winner
-    {
-        Crosses,
-        Zeroes,
-        Draw,
-        GameIsUnfinished
-    }
-    public enum State
-    {
-        Cross,
-        Zero,
-        Unset
-    }
     public class TicTacToeGame
     {
         private readonly State[] board = new State[9];
